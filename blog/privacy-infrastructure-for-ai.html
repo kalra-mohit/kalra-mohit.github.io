@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Privacy infrastructure for AI is the systems layer that turns privacy principles into product and platform controls developers can use, operate, and verify." />
+  <meta name="keywords" content="privacy infrastructure for AI, GenAI privacy, AI governance, privacy engineering, data lineage, purpose limitation" />
+  <meta name="author" content="Mohit Kalra" />
+  <link rel="canonical" href="https://kalra-mohit.github.io/blog/privacy-infrastructure-for-ai.html" />
+  <meta property="og:title" content="Privacy Infrastructure for AI: The Missing Middle Between Policy and Product" />
+  <meta property="og:description" content="A practitioner-oriented essay on why GenAI privacy needs infrastructure: lineage, policy translation, guardrails, observability, and developer workflows." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://kalra-mohit.github.io/blog/privacy-infrastructure-for-ai.html" />
+  <meta property="og:image" content="https://kalra-mohit.github.io/assets/images/hero-privacy-ai.png?v=20260706-1" />
+  <title>Privacy Infrastructure for AI | Mohit Kalra</title>
+  <link rel="stylesheet" href="../style.css?v=20260706-1" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Privacy Infrastructure for AI: The Missing Middle Between Policy and Product",
+    "description": "Privacy infrastructure for AI is the systems layer that turns privacy principles into product and platform controls developers can use, operate, and verify.",
+    "author": {
+      "@type": "Person",
+      "name": "Mohit Kalra",
+      "url": "https://kalra-mohit.github.io/"
+    },
+    "datePublished": "2026-07-05",
+    "dateModified": "2026-07-05",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://kalra-mohit.github.io/blog/privacy-infrastructure-for-ai.html"
+    },
+    "image": "https://kalra-mohit.github.io/assets/images/hero-privacy-ai.png?v=20260706-1"
+  }
+  </script>
+</head>
+<body>
+  <header class="site-nav">
+    <a class="brand" href="../index.html">Mohit Kalra</a>
+    <nav aria-label="Primary navigation">
+      <a href="../index.html#endeavor">Endeavor</a>
+      <a href="../index.html#map">Technical Map</a>
+      <a href="../index.html#writing">Writing</a>
+      <a href="../index.html#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <article class="post">
+      <header class="post-header">
+        <p class="eyebrow">AI Privacy Infrastructure</p>
+        <h1>Privacy Infrastructure for AI: The Missing Middle Between Policy and Product</h1>
+        <p class="post-meta">By Mohit Kalra &middot; July 5, 2026</p>
+        <p class="hero-lead">
+          AI privacy is not only a legal or policy problem. At scale, it becomes
+          an infrastructure problem: how to make privacy requirements visible,
+          enforceable, measurable, and usable by the teams building AI products.
+        </p>
+      </header>
+
+      <section>
+        <h2>The gap</h2>
+        <p>
+          Many privacy conversations start with principles: purpose limitation,
+          data minimization, transparency, access control, retention, and user
+          trust. Those principles matter, but they do not enforce themselves.
+          In production AI systems, the hard question is how those principles
+          become part of the engineering workflow.
+        </p>
+        <p>
+          This is where privacy infrastructure becomes important. Privacy
+          infrastructure is the layer between policy and product. It translates
+          privacy intent into systems that developers can use, platforms can
+          enforce, and organizations can audit.
+        </p>
+      </section>
+
+      <section>
+        <h2>Why GenAI makes this harder</h2>
+        <p>
+          GenAI systems expand the data surface area. A single product may use
+          training data, fine-tuning data, retrieval systems, prompts, logs,
+          evaluations, feedback loops, generated outputs, and downstream product
+          integrations. Each surface creates questions about what data is being
+          used, why it is being used, how long it is retained, and what controls
+          apply.
+        </p>
+        <p>
+          Traditional access control is necessary, but it is not sufficient.
+          AI systems need visibility into data flows, metadata about intended
+          use, enforcement points that understand product context, and evidence
+          that controls operated as expected.
+        </p>
+      </section>
+
+      <section>
+        <h2>The AI privacy infrastructure stack</h2>
+        <p>
+          A practical AI privacy stack has several layers:
+        </p>
+        <ul>
+          <li><strong>Data understanding:</strong> discovery, classification, lineage, and sensitivity signals.</li>
+          <li><strong>Policy translation:</strong> converting privacy requirements into machine-readable constraints and platform contracts.</li>
+          <li><strong>Enforcement:</strong> access boundaries, purpose checks, workflow gates, runtime controls, and safe defaults.</li>
+          <li><strong>Developer experience:</strong> tools that make the privacy-preserving path understandable and easy to follow.</li>
+          <li><strong>Observability and assurance:</strong> audit trails, monitoring, evidence, and operational reliability.</li>
+        </ul>
+        <p>
+          The stack is most useful when these layers work together. Lineage
+          without enforcement is only documentation. Enforcement without
+          developer experience becomes friction. Governance without evidence is
+          difficult to trust.
+        </p>
+      </section>
+
+      <section>
+        <h2>Purpose limitation as an engineering problem</h2>
+        <p>
+          Purpose limitation is a useful example. At the policy level, it asks
+          whether data collected for one purpose is being used for another. At
+          the infrastructure level, it requires systems that can represent data
+          purpose, propagate that metadata, check compatibility with product
+          use, and produce evidence that the rule was enforced.
+        </p>
+        <p>
+          That shift matters. If purpose limitation lives only in documents,
+          it is hard to scale. If it lives in data systems, APIs, developer
+          workflows, and runtime controls, it can become part of how products
+          are built.
+        </p>
+      </section>
+
+      <section>
+        <h2>What I am learning</h2>
+        <p>
+          My current focus is understanding and building the engineering layer
+          that makes privacy practical for AI systems. I am especially
+          interested in data lineage, policy translation, developer-facing
+          guardrails, runtime enforcement, and privacy evidence.
+        </p>
+        <p>
+          This essay is the first in a series. Future posts will go deeper into
+          data lineage, purpose limitation, developer experience, privacy
+          enhancing technologies, and how AI risk management frameworks translate
+          into engineering systems.
+        </p>
+      </section>
+
+      <section>
+        <h2>Further reading</h2>
+        <ul>
+          <li><a href="https://www.nist.gov/itl/ai-risk-management-framework" target="_blank" rel="noopener">NIST AI Risk Management Framework</a></li>
+          <li><a href="https://www.nist.gov/privacy-framework" target="_blank" rel="noopener">NIST Privacy Framework</a></li>
+          <li><a href="https://www.oecd.org/en/topics/sub-issues/privacy-enhancing-technologies.html" target="_blank" rel="noopener">OECD: Privacy-enhancing technologies</a></li>
+          <li><a href="https://engineering.fb.com/2024/08/27/security/privacy-aware-infrastructure-purpose-limitation-meta/" target="_blank" rel="noopener">Meta Engineering: Privacy Aware Infrastructure and purpose limitation</a></li>
+          <li><a href="https://engineering.fb.com/2025/10/23/security/scaling-privacy-infrastructure-for-genai-product-innovation/" target="_blank" rel="noopener">Meta Engineering: Scaling Privacy Infrastructure for GenAI Product Innovation</a></li>
+        </ul>
+      </section>
+    </article>
+  </main>
+
+  <footer>
+    <p><a href="../index.html">Back to home</a></p>
+  </footer>
+</body>
+</html>

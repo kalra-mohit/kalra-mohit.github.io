@@ -364,6 +364,59 @@ footer p {
   margin: 0;
 }
 
+.post {
+  width: min(780px, 100%);
+  margin: 0 auto;
+  padding: 64px 0 40px;
+}
+
+.post-header {
+  margin-bottom: 42px;
+  padding-bottom: 28px;
+  border-bottom: 1px solid var(--line);
+}
+
+.post-header h1 {
+  font-size: clamp(38px, 6vw, 64px);
+}
+
+.post-meta {
+  margin-bottom: 20px;
+  color: var(--muted);
+  font-size: 15px;
+  font-weight: 650;
+}
+
+.post section {
+  padding: 28px 0;
+  border-top: 1px solid var(--line);
+}
+
+.post section:first-of-type {
+  border-top: 0;
+}
+
+.post h2 {
+  margin-bottom: 12px;
+  color: var(--text);
+  font-size: 24px;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.post p,
+.post li {
+  color: var(--text);
+  font-size: 18px;
+}
+
+.post ul {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  padding-left: 24px;
+}
+
 @media (max-width: 860px) {
   .site-nav {
     align-items: flex-start;
